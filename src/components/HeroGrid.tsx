@@ -11,7 +11,6 @@ import img5 from '../img/art5.png';
 import img6 from '../img/art6.png';
 import img7 from '../img/art7.png';
 import img8 from '../img/art8.png';
-import profileImg from '../img/profile.jpg';
 
 const HeroGrid = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -29,7 +28,7 @@ const HeroGrid = () => {
             className="w-48 h-48 md:w-72 md:h-72 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] overflow-hidden bg-white"
           >
             <img 
-              src={profileImg} 
+              src="https://lh3.googleusercontent.com/d/1kDAXV0lH_ZHsUBsdQ91b5mCW86a84nxD" 
               alt="Poynter Profile" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
