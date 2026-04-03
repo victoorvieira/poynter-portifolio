@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 const AboutSection = () => {
   return (
-    <section id="quem-sou-eu" className="py-24 px-6 bg-gray-50">
+    <section id="quem-sou-eu" className="pt-8 md:pt-12 pb-24 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
