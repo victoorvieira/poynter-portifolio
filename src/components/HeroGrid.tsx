@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MousePointer2, X } from 'lucide-react';
 
 // Import images from src/img
-import img1 from '../img/Captura de tela de 2026-04-02 23-05-25.png';
-import img2 from '../img/Captura de tela de 2026-04-02 23-05-39.png';
-import img3 from '../img/Captura de tela de 2026-04-02 23-05-54.png';
-import img4 from '../img/Captura de tela de 2026-04-02 23-06-19.png';
-import img5 from '../img/Captura de tela de 2026-04-02 23-06-37.png';
-import img6 from '../img/Captura de tela de 2026-04-02 23-06-50.png';
-import img7 from '../img/Captura de tela de 2026-04-02 23-07-06.png';
-import img8 from '../img/Captura de tela de 2026-04-02 23-07-14.png';
+import img1 from '../img/art1.png';
+import img2 from '../img/art2.png';
+import img3 from '../img/art3.png';
+import img4 from '../img/art4.png';
+import img5 from '../img/art5.png';
+import img6 from '../img/art6.png';
+import img7 from '../img/art7.png';
+import img8 from '../img/art8.png';
 import profileImg from '../img/profile.jpg';
 
 const HeroGrid = () => {

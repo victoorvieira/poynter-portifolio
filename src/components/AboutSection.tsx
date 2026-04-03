@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import aboutImg from '../img/quem_sou_eu_poynter.png';
+import aboutImg from '../img/about.png';
 
 const AboutSection = () => {
   return (
