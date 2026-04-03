@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import aboutImg from '../img/about.png';
-
 const AboutSection = () => {
   return (
     <section id="quem-sou-eu" className="py-24 px-6 bg-gray-50">
@@ -14,7 +12,7 @@ const AboutSection = () => {
           className="w-full md:w-1/2 aspect-square overflow-hidden rounded-2xl shadow-2xl"
         >
           <img
-            src={aboutImg}
+            src="https://lh3.googleusercontent.com/d/1UHylfLeKunimJ_JfOF9piGIomw3q2OzQ"
             alt="Poynter"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MousePointer2, X } from 'lucide-react';
 
-// Import images from src/img
-import img1 from '../img/art1.png';
-import img2 from '../img/art2.png';
-import img3 from '../img/art3.png';
-import img4 from '../img/art4.png';
-import img5 from '../img/art5.png';
-import img6 from '../img/art6.png';
-import img7 from '../img/art7.png';
-import img8 from '../img/art8.png';
-
 const HeroGrid = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+  const images = [
+    "https://lh3.googleusercontent.com/d/1nlTUgx8cg8pIA-GffMSTnlNT1NwunPZT",
+    "https://lh3.googleusercontent.com/d/1A9N_CUDj9wfLtVh84pk_nXb9uOouV9ds",
+    "https://lh3.googleusercontent.com/d/1SDZxho_iB2FHZB24sxK7r_e3EI34wJNk",
+    "https://lh3.googleusercontent.com/d/1TE2w6vjA6QXPbVhe1emTATs9PKc8nzst",
+    "https://lh3.googleusercontent.com/d/1Y0N32FIzqyINZdkZTOYtNOaY63mG2ztz",
+    "https://lh3.googleusercontent.com/d/1kqQ5A4vgZOgGPjPfHdC-STQ79yWO_VRK",
+    "https://lh3.googleusercontent.com/d/1m50CrB12YHCaHTkqIVxMIDZOWUFm1NPg",
+    "https://lh3.googleusercontent.com/d/1KcN9383qE6cLgwsrUs0KsaI4Zi-E4vW3"
+  ];
 
   return (
     <section className="min-h-screen relative overflow-hidden">
