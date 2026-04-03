@@ -60,13 +60,13 @@ const HeroGrid = () => {
           >
             {/* Front: Profile Image */}
             <div 
-              className="absolute inset-0 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] overflow-hidden bg-white"
+              className="absolute inset-0 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] overflow-hidden bg-white group"
               style={{ backfaceVisibility: 'hidden' }}
             >
               <img 
                 src="https://lh3.googleusercontent.com/d/1kDAXV0lH_ZHsUBsdQ91b5mCW86a84nxD" 
                 alt="Poynter Profile" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-all duration-500 hover:grayscale"
                 referrerPolicy="no-referrer"
               />
             </div>
