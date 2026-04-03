@@ -4,6 +4,9 @@ import { MousePointer2, X } from 'lucide-react';
 
 const HeroGrid = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeImage, setActiveImage] = useState<number | null>(null);
+  const [isFlipped, setIsFlipped] = useState(false);
+  
   const images = [
     "https://lh3.googleusercontent.com/d/1nlTUgx8cg8pIA-GffMSTnlNT1NwunPZT",
     "https://lh3.googleusercontent.com/d/1A9N_CUDj9wfLtVh84pk_nXb9uOouV9ds",
@@ -15,26 +18,81 @@ const HeroGrid = () => {
     "https://lh3.googleusercontent.com/d/1KcN9383qE6cLgwsrUs0KsaI4Zi-E4vW3"
   ];
 
+  const handleImageClick = (src: string, index: number) => {
+    if (window.innerWidth < 768) {
+      if (activeImage === index) {
+        setSelectedImage(src);
+      } else {
+        setActiveImage(index);
+      }
+    } else {
+      setSelectedImage(src);
+    }
+  };
+
+  const menuItems = [
+    { label: 'Galeria', href: '#galeria' },
+    { label: 'Quem sou eu', href: '#quem-sou-eu' },
+    { label: 'Contato', href: '#contato' },
+  ];
+
   return (
     <section className="min-h-screen relative overflow-hidden">
       {/* Floating Profile Icon - Centralized and Enlarged */}
       <div className="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
-        <div className="relative pointer-events-auto">
+        <div className="relative pointer-events-auto perspective-1000">
           <motion.div 
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5, type: 'spring' }}
-            className="w-48 h-48 md:w-72 md:h-72 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] overflow-hidden bg-white"
+            animate={{ 
+              opacity: 1, 
+              scale: 1,
+              rotateY: isFlipped ? 180 : 0
+            }}
+            transition={{ 
+              duration: 0.8, 
+              type: 'spring',
+              damping: 20,
+              stiffness: 100
+            }}
+            style={{ transformStyle: 'preserve-3d' }}
+            className="w-48 h-48 md:w-72 md:h-72 cursor-pointer relative"
+            onClick={() => setIsFlipped(!isFlipped)}
           >
-            <img 
-              src="https://lh3.googleusercontent.com/d/1kDAXV0lH_ZHsUBsdQ91b5mCW86a84nxD" 
-              alt="Poynter Profile" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+            {/* Front: Profile Image */}
+            <div 
+              className="absolute inset-0 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] overflow-hidden bg-white"
+              style={{ backfaceVisibility: 'hidden' }}
+            >
+              <img 
+                src="https://lh3.googleusercontent.com/d/1kDAXV0lH_ZHsUBsdQ91b5mCW86a84nxD" 
+                alt="Poynter Profile" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+
+            {/* Back: Menu */}
+            <div 
+              className="absolute inset-0 rounded-full border-8 border-white shadow-[0_0_50px_rgba(0,0,0,0.3)] bg-black flex flex-col items-center justify-center p-6"
+              style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+            >
+              <div className="space-y-4 text-center">
+                {menuItems.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsFlipped(false);
+                    }}
+                    className="block text-white font-serif text-lg md:text-2xl hover:text-gray-400 transition-colors tracking-widest"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           </motion.div>
-          
-          {/* Exponent 3 - Removed as it is now part of the image */}
         </div>
       </div>
 
@@ -46,7 +104,7 @@ const HeroGrid = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
             className="relative overflow-hidden group cursor-pointer"
-            onClick={() => setSelectedImage(src)}
+            onClick={() => handleImageClick(src, index)}
           >
             <img
               src={src}
@@ -55,8 +113,8 @@ const HeroGrid = () => {
               referrerPolicy="no-referrer"
             />
             
-            {/* Reveal Content (Visible on hover) */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+            {/* Reveal Content (Visible on hover OR if active on mobile) */}
+            <div className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center bg-black/20 md:bg-transparent ${activeImage === index ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
               <span className="text-white font-serif italic text-xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 Ver Obra
               </span>
@@ -80,13 +138,13 @@ const HeroGrid = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="relative max-w-5xl w-full h-full flex items-center justify-center"
+              className="relative max-w-5xl"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImage}
                 alt="Selected Artwork"
-                className="max-w-full max-h-full object-contain shadow-2xl"
+                className="max-w-full max-h-[85vh] object-contain shadow-2xl"
               />
               <button
                 onClick={() => setSelectedImage(null)}

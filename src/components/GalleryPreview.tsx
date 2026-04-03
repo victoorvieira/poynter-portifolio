@@ -4,6 +4,8 @@ import { ArrowRight, X } from 'lucide-react';
 
 const GalleryPreview = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeImage, setActiveImage] = useState<number | null>(null);
+
   const images = [
     "https://lh3.googleusercontent.com/d/1nlTUgx8cg8pIA-GffMSTnlNT1NwunPZT",
     "https://lh3.googleusercontent.com/d/1A9N_CUDj9wfLtVh84pk_nXb9uOouV9ds",
@@ -12,6 +14,18 @@ const GalleryPreview = () => {
     "https://lh3.googleusercontent.com/d/1Y0N32FIzqyINZdkZTOYtNOaY63mG2ztz",
     "https://lh3.googleusercontent.com/d/1kqQ5A4vgZOgGPjPfHdC-STQ79yWO_VRK"
   ];
+
+  const handleImageClick = (src: string, index: number) => {
+    if (window.innerWidth < 768) {
+      if (activeImage === index) {
+        setSelectedImage(src);
+      } else {
+        setActiveImage(index);
+      }
+    } else {
+      setSelectedImage(src);
+    }
+  };
 
   return (
     <section id="galeria" className="py-24 px-6">
@@ -39,7 +53,7 @@ const GalleryPreview = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative cursor-pointer"
-              onClick={() => setSelectedImage(src)}
+              onClick={() => handleImageClick(src, index)}
             >
               {/* Frame Structure */}
               <div className="bg-white p-4 shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-gray-100 transition-transform duration-500 group-hover:-translate-y-2">
@@ -60,8 +74,8 @@ const GalleryPreview = () => {
                 </div>
               </div>
 
-              {/* Hover Overlay (Minimalist) */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center pointer-events-none">
+              {/* Hover Overlay (Minimalist) - Visible on hover OR if active on mobile */}
+              <div className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center pointer-events-none ${activeImage === index ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                 <div className="bg-black/5 backdrop-blur-[2px] w-full h-full"></div>
               </div>
             </motion.div>
@@ -84,13 +98,13 @@ const GalleryPreview = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="relative max-w-5xl w-full h-full flex items-center justify-center"
+              className="relative max-w-5xl"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImage}
                 alt="Selected Artwork"
-                className="max-w-full max-h-full object-contain shadow-2xl"
+                className="max-w-full max-h-[85vh] object-contain shadow-2xl"
               />
               <button
                 onClick={() => setSelectedImage(null)}
