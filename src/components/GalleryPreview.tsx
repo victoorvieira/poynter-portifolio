@@ -29,7 +29,7 @@ const GalleryPreview = () => {
   const displayedArtworks = showAll ? ARTWORKS : ARTWORKS.slice(0, 6);
 
   return (
-    <section id="galeria" className="py-24 px-6">
+    <section id="galeria" className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-end mb-12">
           <div>

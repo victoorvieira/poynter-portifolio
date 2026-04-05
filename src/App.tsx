@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <main>
         <HeroGrid />
         <PoynterSection />

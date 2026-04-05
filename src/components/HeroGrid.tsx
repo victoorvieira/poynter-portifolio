@@ -33,7 +33,7 @@ const HeroGrid = () => {
   };
 
   return (
-    <section className="min-h-screen relative overflow-hidden">
+    <section className="min-h-screen relative overflow-hidden bg-black">
       {/* Floating Profile Icon - Centralized and Enlarged */}
       <div className="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
         <div className="relative pointer-events-auto perspective-1000">
@@ -92,20 +92,20 @@ const HeroGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 h-screen w-full">
+      <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 h-screen w-full gap-0 overflow-hidden items-stretch justify-items-stretch bg-black">
         {ARTWORKS.slice(0, 8).map((artwork, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1.02 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
-            className="relative overflow-hidden group cursor-pointer"
+            className="relative overflow-hidden group cursor-pointer h-full w-full bg-black"
             onClick={() => handleImageClick(artwork, index)}
           >
             <img
               src={artwork.src}
               alt={artwork.title}
-              className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+              className="absolute inset-0 w-full h-full object-cover block transition-all duration-700 group-hover:scale-110 scale-105"
               referrerPolicy="no-referrer"
             />
             

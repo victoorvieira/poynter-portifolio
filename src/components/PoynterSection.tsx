@@ -33,7 +33,7 @@ const PoynterSection = () => {
   const tz = isMobile ? 24 : 32;
 
   return (
-    <section className="pt-16 md:pt-24 pb-8 md:pb-12 bg-gray-50 flex flex-col items-center justify-center overflow-hidden px-6">
+    <section className="pt-16 md:pt-24 pb-8 md:pb-12 bg-white flex flex-col items-center justify-center overflow-hidden px-6">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
