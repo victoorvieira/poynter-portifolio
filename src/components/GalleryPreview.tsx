@@ -168,7 +168,7 @@ const GalleryPreview = () => {
                     href={getWhatsAppUrl(selectedArtwork.title)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-bold uppercase tracking-wider"
+                    className="flex items-center justify-center w-full py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-bold uppercase tracking-[0.2em] text-xs whitespace-nowrap"
                   >
                     TENHO INTERESSE
                   </a>
