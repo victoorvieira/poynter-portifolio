@@ -30,9 +30,6 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="space-y-4">
-          <p className="text-gray-500 font-medium">Interessado em uma colaboração ou compra?</p>
-        </div>
 
         <div className="mt-20 pt-8 border-t border-gray-50 w-full text-gray-400 text-sm flex flex-col items-center gap-2">
           <p>&copy; {new Date().getFullYear()} POYNTER. Todos os direitos reservados.</p>
