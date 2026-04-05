@@ -1,11 +1,13 @@
 import React from 'react';
-import { Instagram, Youtube, Mail, Music2 } from 'lucide-react';
+import { Instagram, Youtube, Mail, Music2, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const socials = [
     { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, href: 'https://www.instagram.com/poynterdude/' },
     { name: 'TikTok', icon: <Music2 className="w-6 h-6" />, href: 'https://www.tiktok.com/@poynterdude' },
     { name: 'YouTube', icon: <Youtube className="w-6 h-6" />, href: 'https://youtube.com/@poynterdude' },
+    { name: 'WhatsApp', icon: <MessageCircle className="w-6 h-6" />, href: 'https://wa.me/5521993544921' },
+    { name: 'Email', icon: <Mail className="w-6 h-6" />, href: 'mailto:poynter.art@gmail.com' },
   ];
 
   return (
@@ -30,13 +32,6 @@ const Footer = () => {
 
         <div className="space-y-4">
           <p className="text-gray-500 font-medium">Interessado em uma colaboração ou compra?</p>
-          <a
-            href="mailto:contato@poynter.art"
-            className="flex items-center space-x-2 text-xl font-semibold hover:text-gray-600 transition-colors"
-          >
-            <Mail className="w-6 h-6" />
-            <span>contato@poynter.art</span>
-          </a>
         </div>
 
         <div className="mt-20 pt-8 border-t border-gray-50 w-full text-gray-400 text-sm flex flex-col items-center gap-2">

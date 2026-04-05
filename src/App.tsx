@@ -5,6 +5,7 @@ import PoynterSection from './components/PoynterSection';
 import AboutSection from './components/AboutSection';
 import GalleryPreview from './components/GalleryPreview';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <GalleryPreview />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
