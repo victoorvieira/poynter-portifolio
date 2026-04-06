@@ -21,7 +21,7 @@ const GalleryPreview = () => {
   };
 
   const getWhatsAppUrl = (title: string) => {
-    const phone = "21993704675";
+    const phone = "5521993704675";
     const message = encodeURIComponent(`Olá! Vim pelo site e tenho interesse na obra ${title}.`);
     return `https://wa.me/${phone}?text=${message}`;
   };
