@@ -13,7 +13,7 @@ const AboutSection = () => {
         >
           <img
             src="https://lh3.googleusercontent.com/d/1sXFzFrRkUG_OvSCJXIS9AtP9zInSFbxD"
-            alt="Poynter"
+            alt="POYNTER³"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />

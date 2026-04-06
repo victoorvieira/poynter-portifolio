@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer id="contato" className="bg-white border-t border-gray-100 py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
-        <h2 className="text-3xl font-serif font-bold mb-8 tracking-widest">POYNTER</h2>
+        <h2 className="text-3xl font-serif font-bold mb-8 tracking-widest">POYNTER³</h2>
         
         <div className="flex space-x-8 mb-12">
           {socials.map((social) => (
@@ -32,7 +32,7 @@ const Footer = () => {
 
 
         <div className="mt-20 pt-8 border-t border-gray-50 w-full text-gray-400 text-sm flex flex-col items-center gap-2">
-          <p>&copy; {new Date().getFullYear()} POYNTER. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} POYNTER³. Todos os direitos reservados.</p>
           <p className="flex items-center gap-1">
             Construído por <span className="font-bold text-black tracking-tighter">minimumlabs</span>
           </p>

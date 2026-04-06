@@ -20,7 +20,7 @@ const Navbar = () => {
           href="/" 
           className="text-3xl font-serif font-bold tracking-[0.2em] text-white drop-shadow-md"
         >
-          POYNTER
+          POYNTER³
         </motion.a>
 
         {/* Floating Menu Button */}

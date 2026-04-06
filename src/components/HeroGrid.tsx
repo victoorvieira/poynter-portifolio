@@ -61,7 +61,7 @@ const HeroGrid = () => {
             >
               <img 
                 src="https://lh3.googleusercontent.com/d/1kDAXV0lH_ZHsUBsdQ91b5mCW86a84nxD" 
-                alt="Poynter Profile" 
+                alt="POYNTER³ Profile" 
                 className="w-full h-full object-cover transition-all duration-500 hover:grayscale"
                 referrerPolicy="no-referrer"
               />

@@ -42,7 +42,7 @@ const PoynterSection = () => {
         className="flex flex-col md:flex-row items-center gap-6 md:gap-12"
       >
         <h2 className="text-5xl sm:text-6xl md:text-8xl font-serif tracking-[0.15em] md:tracking-[0.2em] text-black text-center">
-          POYNTER
+          POYNTER³
         </h2>
         
         {/* Black and White Magic Cube */}
