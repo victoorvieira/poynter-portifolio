@@ -6,7 +6,7 @@ const Footer = () => {
     { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, href: 'https://www.instagram.com/poynterdude/' },
     { name: 'TikTok', icon: <Music2 className="w-6 h-6" />, href: 'https://www.tiktok.com/@poynterdude' },
     { name: 'YouTube', icon: <Youtube className="w-6 h-6" />, href: 'https://youtube.com/@poynterdude' },
-    { name: 'WhatsApp', icon: <MessageCircle className="w-6 h-6" />, href: 'https://wa.me/5521993544921' },
+    { name: 'WhatsApp', icon: <MessageCircle className="w-6 h-6" />, href: 'https://wa.me/5521993704675' },
     { name: 'Email', icon: <Mail className="w-6 h-6" />, href: 'mailto:poynter.art@gmail.com' },
   ];
 
