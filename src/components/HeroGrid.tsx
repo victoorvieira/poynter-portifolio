@@ -169,6 +169,9 @@ const HeroGrid = () => {
                     <p className="text-2xl font-serif font-bold text-black mt-6">
                       {selectedArtwork.price}
                     </p>
+                    <p className="text-[10px] text-gray-400 uppercase tracking-widest mt-1">
+                      Impressão em fine art com certificado de autenticidade
+                    </p>
                   </div>
                 </div>
 
