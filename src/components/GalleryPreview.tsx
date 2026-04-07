@@ -118,14 +118,14 @@ const GalleryPreview = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedArtwork(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 md:p-10 cursor-zoom-out"
+            className="fixed inset-0 z-50 flex justify-center items-start md:items-center bg-black/95 p-4 md:p-10 overflow-y-auto cursor-zoom-out"
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="relative max-w-6xl w-full bg-white rounded-lg overflow-hidden flex flex-col md:flex-row shadow-2xl"
+              className="relative max-w-6xl w-full bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl my-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Image Container */}
@@ -186,10 +186,10 @@ const GalleryPreview = () => {
 
               <button
                 onClick={() => setSelectedArtwork(null)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-gray-900 transition-colors md:hidden"
+                className="absolute top-4 right-4 z-50 p-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-900 shadow-lg md:hidden"
                 aria-label="Close modal"
               >
-                <X size={24} />
+                <X size={20} />
               </button>
             </motion.div>
           </motion.div>
