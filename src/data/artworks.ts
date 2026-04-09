@@ -15,7 +15,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2026",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1KXSEuLxxJcV_-MNW8XTCZPI5M1lGeGBW"
   },
   {
@@ -24,7 +24,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1M1LRPfgVo18XgRmpCvqhLvfD7mywHGsM"
   },
   {
@@ -33,7 +33,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1p4wFZ5qoOfrsChy_FqgiZR3n1ii4ddCR"
   },
   {
@@ -42,7 +42,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1x4gUy-2-x81cTwBcVSvhL3_rIMtyBvAk"
   },
   {
@@ -51,7 +51,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1e9f4i-k20z_4wJeo0YDXJK0xAq31Gk4O"
   },
   {
@@ -60,7 +60,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1R4XGKMh4F7oOaF0SYk_CRuOyjyAt2Pdb"
   },
   {
@@ -69,7 +69,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/18WidbAzGqpnDPXEc2_g-3QkEsqgjAi3d"
   },
   {
@@ -78,7 +78,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1i0orm4tiRg8CrplHtnHj3EOuO4sczWtS"
   },
   {
@@ -87,7 +87,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1_TBwjKmLxoyz7Vid4f6OMZeH_OveLxs1"
   },
   {
@@ -96,26 +96,26 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/17VeJ5G1XlVMshNxKN49LX3PpJaN9oBq2"
   },
   {
-    title: "QUE A DOR NOS MOVIMENTE",
+    title: "É ELA!",
     status: "DISPONÍVEL",
-    materials: "Tinta acrílica e Posca em tela de algodão com chassi",
-    size: "60 x 50 cm",
+    materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
+    size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
-    src: "https://lh3.googleusercontent.com/d/1GubL_J-sTkM97OKxaXGADeopEDr6orXb"
+    price: "R$ 250,00",
+    src: "https://lh3.googleusercontent.com/d/17FzJo_N3k1xCmPdc3cxLTMCOi1Ji6rJi"
   },
   {
-    title: "REMÉDIO PRA DOIDO É UM DOIDO E MEIO",
+    title: "A VIDA ACONTECE NO SUBÚRBIO",
     status: "DISPONÍVEL",
-    materials: "Tinta acrílica e Posca em tela de algodão com chassi",
-    size: "60 x 50 cm",
-    year: "2025",
-    price: "R$ 200,00",
-    src: "https://lh3.googleusercontent.com/d/1Ceu4dIf4hpKc9C0JPOqW_AvfoVmqk95e"
+    materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
+    size: "297 x 420mm (A3)",
+    year: "2024",
+    price: "R$ 250,00",
+    src: "https://lh3.googleusercontent.com/d/1T9RiE-19pzNVLdmBzCLLNmM29xqi5pw3"
   },
   {
     title: "HÁ URGÊNCIA EM ESTAR VIVO",
@@ -123,7 +123,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/17WXA5jw7JZGNPjTRgoL0v9l-WGnguZLE"
   },
   {
@@ -132,7 +132,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1tfK0JJLQoCaQ6qc0A8u-Kz6Obwz1o3WA"
   },
   {
@@ -141,7 +141,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/13ThyduLjmUI9QoVTMQruaIWRk-s6VUTT"
   },
   {
@@ -150,7 +150,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/17HmuD7td8MgCQtLOAPA0usJYaF8ykIwI"
   },
   {
@@ -159,7 +159,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2025",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1qdIv3abVjzjI-N6PefdAJdcjbIlDOfXu"
   },
   {
@@ -168,7 +168,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2026",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1boP7jJfQLjv8MRSb5iGCA8hG8B16PmEp"
   },
   {
@@ -177,7 +177,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2026",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1Z6JUxlyIhbBM5X51vUHuSwfM9pSIQBKT"
   },
   {
@@ -186,7 +186,7 @@ export const ARTWORKS: Artwork[] = [
     materials: "Tinta acrílica e Posca sobre papel Canson 300g/m²",
     size: "297 x 420mm (A3)",
     year: "2026",
-    price: "R$ 200,00",
+    price: "R$ 250,00",
     src: "https://lh3.googleusercontent.com/d/1o4gBcmbrwaRXa9D1wQZxu8rnzuHRh9IT"
   }
 ];
