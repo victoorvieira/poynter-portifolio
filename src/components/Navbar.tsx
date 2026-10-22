@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
+
+const MotionLink = motion(Link);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Galeria', href: '#galeria' },
-    { name: 'Quem sou eu', href: '#quem-sou-eu' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Galeria', href: '/galeria' },
+    { name: 'Quem sou eu', href: '/biografia' },
+    { name: 'Contato', href: '/contato' },
   ];
 
   return (
@@ -45,17 +48,17 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center space-y-8">
               {menuItems.map((item, index) => (
-                <motion.a
+                <MotionLink
                   key={item.name}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setIsOpen(false)}
                   className="text-4xl md:text-6xl font-serif font-bold text-white hover:text-gray-400 transition-colors tracking-widest"
                 >
                   {item.name}
-                </motion.a>
+                </MotionLink>
               ))}
             </div>
           </motion.div>

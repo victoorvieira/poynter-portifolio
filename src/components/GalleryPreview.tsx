@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import { ARTWORKS, Artwork } from '../data/artworks';
 
 const GalleryPreview = () => {
+  const { pathname } = useLocation();
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
   const [activeImage, setActiveImage] = useState<number | null>(null);
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(pathname.replace(/\/+$/, '') === '/galeria');
+
+  React.useEffect(() => {
+    setShowAll(pathname.replace(/\/+$/, '') === '/galeria');
+  }, [pathname]);
 
   const handleImageClick = (artwork: Artwork, index: number) => {
     if (window.innerWidth < 768) {

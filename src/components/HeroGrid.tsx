@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MousePointer2, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { ARTWORKS, Artwork } from '../data/artworks';
 
 const HeroGrid = () => {
@@ -21,9 +22,9 @@ const HeroGrid = () => {
   };
 
   const menuItems = [
-    { label: 'Galeria', href: '#galeria' },
-    { label: 'Quem sou eu', href: '#quem-sou-eu' },
-    { label: 'Contato', href: '#contato' },
+    { label: 'Galeria', href: '/galeria' },
+    { label: 'Quem sou eu', href: '/biografia' },
+    { label: 'Contato', href: '/contato' },
   ];
 
   const getWhatsAppUrl = (title: string) => {
@@ -74,9 +75,9 @@ const HeroGrid = () => {
             >
               <div className="space-y-4 text-center">
                 {menuItems.map((item) => (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={item.href}
                     onClick={(e) => {
                       e.stopPropagation();
                       setIsFlipped(false);
@@ -84,7 +85,7 @@ const HeroGrid = () => {
                     className="block text-white font-serif text-lg md:text-2xl hover:text-gray-400 transition-colors tracking-widest"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
